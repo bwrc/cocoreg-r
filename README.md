@@ -10,6 +10,8 @@ The algorithm is described in the paper:
 
 Using regression makes extraction of shared variation in multiple datasets easy: Jussi Korpela, Andreas Henelius, Lauri Ahonen, Arto Klami, Kai Puolamäki, Data Mining and Knowledge Discovery, 2016. DOI: 10.1007/s10618-016-0465-y
 
+The authors' version is available in this repository as [cocoreg\_plain.pdf](./docs/cocoreg_plain.pdf).
+
 Usage
 -----
 
