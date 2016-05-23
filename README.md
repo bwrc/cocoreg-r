@@ -2,7 +2,16 @@
 cocoreg
 =======
 
-`cocoreg` is an [R-package](https://www.r-project.org/) for extracting shared variation in collections of datasets using regression models.
+`cocoreg` is an R-package for extracting shared variation in collections of datasets using regression models. The current stable release is available in CRAN:
+
+<http://cran.r-project.org/package=cocoreg>
+
+The algorithm is described in the paper:
+
+Using regression makes extraction of shared variation in multiple datasets easy: Jussi Korpela, Andreas Henelius, Lauri Ahonen, Arto Klami, Kai Puolamäki, Data Mining and Knowledge Discovery, 2016. DOI: 10.1007/s10618-016-0465-y
+
+Usage
+-----
 
 A minimal usage example:
 
@@ -14,7 +23,7 @@ shared.by.all.df <- variation_shared_by(dc, 'all') #only on synthetic datasets
 ggplot_dclst(list(observed = dc$data, shared = shared.by.all.df, cocoreg = ccr$data))
 ```
 
-![](README-unnamed-chunk-2-1.png) 
+![](README-unnamed-chunk-2-1.png)
 
 ``` r
 
@@ -22,7 +31,7 @@ library(reshape) #importing from namespace does not work as expected
 ggcompare_dclst(list(shared = shared.by.all.df, cocoreg = ccr$data))
 ```
 
-![](README-unnamed-chunk-2-2.png) 
+![](README-unnamed-chunk-2-2.png)
 
 Overview
 --------
