@@ -1,1 +1,6 @@
 ^NEWS\.md$
+^cran-comments\.md$
+^README\.Rmd$
+^NEWS\.html$
+^README\.html$
+^revdep
