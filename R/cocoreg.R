@@ -387,7 +387,7 @@ compose_all <- function(x, paths, mappings) {
 }
 
 
-#' The Common Components by Regression (CoCoReg) algorith.
+#' The Common Components by Regression (CoCoReg) algorithm
 #' 
 #' @description 
 #' An algorithm that extracts common variation between datasets using regression.
@@ -726,7 +726,7 @@ matrix_variability <- function(mat_lst,
 }
 
 
-#' Determine the variability of matrices under row suffling
+#' Determine the variability of matrices under row shuffling
 #'
 #' @param mat_lst A list of matrices
 #' @param B integer, Number of times to sample (shuffle)

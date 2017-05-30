@@ -30,7 +30,7 @@
 #' Create signals
 #' 
 #' @param N Number of observations in data as integer
-#' @param decorrelate (optional) Should the variables be decorrelated?
+#' @param decorrelate (optional) Should the variables be de-correlated?
 #'
 #' @return A [N,3] matrix of signals
 #' 
@@ -53,7 +53,7 @@ create_Z_linear <- function(N, decorrelate = T){
 }
 
 
-#' An illustrative synthetic datacollection
+#' An illustrative synthetic data collection
 #' 
 #' @description 
 #' Model: D_k = D_shared_by_all + D_shared_by_subset + D_unique,
@@ -158,7 +158,7 @@ create_syn_data_uds <- function(){
 }
 
 
-#' A dollection with unrelated variables
+#' A collection with unrelated variables
 #'
 #' @return A list with elements
 #' \item{data}{Data collection as a list of data.frames}
@@ -279,7 +279,7 @@ create_syndata_pwl <- function(){
 #' \item{E}{Noise}
 #' \item{var.coef}{Noise multiplication factor used}
 #' 
-#' Each dataset is a data.frame to gain combatibility with lm() and glm()
+#' Each dataset is a data.frame to gain compatibility with lm() and glm()
 #'
 #' @export
 create_syndata_mv <- function(Z, W, max_var_arr = rep(1,length(W))) {
