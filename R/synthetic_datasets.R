@@ -349,13 +349,13 @@ dl_scale <- function(dl,...){
 #'  of each datasets unique variation). The linear toy datasets do not contain 
 #'  variation unique to a dataset other than pure noise.
 #'  
-#'  @param dc    A data collection from one of the create_syn_data_*() functions
-#'  @param type  Type of variation to extract, allowed values c('all','subset','all_and_subset')
-#'  @param center (optional) Should the output data be centered?
-#'  @param scale (optional) Should the output data be scaled?
-#'  
-#'  @return A list of data.frames containing the desired variation component
-#'  
+#' @param dc    A data collection from one of the create_syn_data_*() functions
+#' @param type  Type of variation to extract, allowed values c('all','subset','all_and_subset')
+#' @param center (optional) Should the output data be centered?
+#' @param scale (optional) Should the output data be scaled?
+#' 
+#' @return A list of data.frames containing the desired variation component
+#' 
 #' @examples
 #' \dontrun{
 #' dc <- create_syn_data_toy()
@@ -364,10 +364,10 @@ dl_scale <- function(dl,...){
 #' ldNonUnique = variation_shared_by(dc, "all_and_subset", center = F) 
 #' dNoise <- mapply(function(x,y){x-y}, x=dc$data, y=ldNonUnique, SIMPLIFY = F)
 #' ggplot_dclst(list(observed = dc$data,
-#'                  shared.by.all = ldSharedByAll,
-#'                  shared.by.some = ldSharedBySome,
-#'                  noise = dNoise),
-#'              ylim = c(-3, 3))
+#'                 shared.by.all = ldSharedByAll,
+#'                 shared.by.some = ldSharedBySome,
+#'                 noise = dNoise),
+#'             ylim = c(-3, 3))
 #' }
 #' 
 #' @export

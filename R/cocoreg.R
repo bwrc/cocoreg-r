@@ -20,7 +20,7 @@
 ## -----------------------------------------------------------------------------
 
 #' Create a path
-#' 
+#'
 #' @description 
 #' Given a set of numbers and a starting point, create a path from
 #' the starting point through each point. If cyclic = FALSE, the path
@@ -30,8 +30,8 @@
 #' @param p [1,m] int, A set of numbers through which the path must go,
 #'        excluding the starting point.
 #' @param cyclic boolean, If TRUE, the path leads back to the starting point.
-#'        If FALSE, the path stops at last element of p.
-#'                
+#'       If FALSE, the path stops at last element of p.
+#'               
 #' @return A list containing the path definition.
 #'
 #' @keywords internal
@@ -54,7 +54,7 @@ pathify <- function(ind, p, cyclic = FALSE) {
 #' @param n [1,1] int, Number of points in the whole set.
 #' @param cyclic boolean, Should the path be cyclic (1-2-1) or noncyclic (2-1).
 #' @param sample_paths boolean, If FALSE, all possible paths are generated.
-#'        If true one path per ending point is selected.
+#'       If true one path per ending point is selected.
 #'
 #' @return A list of lists containing the paths.
 #'
@@ -110,7 +110,7 @@ generate_paths_cyclic <- function(ind, n) {
 #' @param ind The starting dataset
 #' @param n The number of datasets.
 #' @param sample_paths boolean, If FALSE, all possible paths are generated.
-#'        If TRUE one path per ending point is selected.
+#'       If TRUE one path per ending point is selected.
 #'
 #' @return A list of lists containing the paths.
 #'
@@ -335,8 +335,8 @@ create_mappings <- function(data, mapping_function = mapping_lm) {
 #' @param x A data frame or vector
 #' @param path A list describing the path.
 #' @param mappings A list containing the mapping functions described in the path.
-#'                  Usually a list of all M*M-M available mappings between the M
-#'                  data sets.
+#'                 Usually a list of all M*M-M available mappings between the M
+#'                 data sets.
 #'
 #' @return A vector containing the result of the composition.
 #'

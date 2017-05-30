@@ -11,7 +11,7 @@ Authors@R: c(
 Author: Jussi Korpela [aut, cre], Andreas Henelius [aut], Finnish Institute of Occupational Health [cph]
 Maintainer: Jussi Korpela <jussi.korpela@iki.fi>
 Depends: R (>= 3.2.0) 
-Imports:ggplot2,
+Imports: ggplot2,
 	gridExtra,
 	CCAGFA,
 	RGCCA,
@@ -27,3 +27,4 @@ License: MIT + file LICENSE
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
+RoxygenNote: 6.0.1

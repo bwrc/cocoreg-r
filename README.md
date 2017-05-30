@@ -25,7 +25,7 @@ shared.by.all.df <- variation_shared_by(dc, 'all') #only on synthetic datasets
 ggplot_dclst(list(observed = dc$data, shared = shared.by.all.df, cocoreg = ccr$data))
 ```
 
-![](README-unnamed-chunk-2-1.png)
+![](man/figures/unnamed-chunk-1-1.png)
 
 ``` r
 
@@ -33,7 +33,7 @@ library(reshape) #importing from namespace does not work as expected
 ggcompare_dclst(list(shared = shared.by.all.df, cocoreg = ccr$data))
 ```
 
-![](README-unnamed-chunk-2-2.png)
+![](man/figures/unnamed-chunk-1-2.png)
 
 Overview
 --------
