@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 # cocoreg
 
-`cocoreg` is an R -package for extracting shared variation in collections of datasets using regression models. The current stable release is available in CRAN:
+`cocoreg` is an R-package for extracting shared variation in collections of datasets using regression models. The current stable release is available in CRAN:
 
 [http://cran.r-project.org/package=cocoreg](http://cran.r-project.org/package=cocoreg)
 
