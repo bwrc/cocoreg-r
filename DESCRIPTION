@@ -1,7 +1,7 @@
 Package: cocoreg
 Type: Package
 Title: Extracts Shared Variation in Collections of Datasets Using Regression Models
-Version: 0.1.0
+Version: 0.1.1
 Description: The cocoreg algorithm extracts shared variation from a collection of datasets using regression models.
 Authors@R: c(
 	person("Jussi", "Korpela", role = c("aut", "cre"), email = "jussi.korpela@iki.fi"),
