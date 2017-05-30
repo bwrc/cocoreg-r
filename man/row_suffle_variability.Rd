@@ -2,7 +2,7 @@
 % Please edit documentation in R/cocoreg.R
 \name{row_suffle_variability}
 \alias{row_suffle_variability}
-\title{Determine the variability of matrices under row suffling}
+\title{Determine the variability of matrices under row shuffling}
 \usage{
 row_suffle_variability(mat_lst, B = 50)
 }
@@ -12,8 +12,8 @@ row_suffle_variability(mat_lst, B = 50)
 \item{B}{integer, Number of times to sample (shuffle)}
 }
 \value{
-[B,K] matrix, Frobenius norm vectors corresponding to row suffling
+[B,K] matrix, Frobenius norm vectors corresponding to row shuffling
 }
 \description{
-Determine the variability of matrices under row suffling
+Determine the variability of matrices under row shuffling
 }

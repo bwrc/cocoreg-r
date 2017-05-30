@@ -731,7 +731,7 @@ matrix_variability <- function(mat_lst,
 #' @param mat_lst A list of matrices
 #' @param B integer, Number of times to sample (shuffle)
 #'
-#' @return [B,K] matrix, Frobenius norm vectors corresponding to row suffling
+#' @return [B,K] matrix, Frobenius norm vectors corresponding to row shuffling
 #'
 #' @export
 row_suffle_variability <- function(mat_lst, B=50){

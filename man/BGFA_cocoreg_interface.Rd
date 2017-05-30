@@ -11,7 +11,7 @@ BGFA_cocoreg_interface(df_list, K = 8, Nrep = 2, threshold = 0.001)
 
 \item{K}{[1,1] int, (Maximum) number of GFA components}
 
-\item{Nrep}{[1,1] int, Number of random initializatin used for learning the model}
+\item{Nrep}{[1,1] int, Number of random initialization used for learning the model}
 
 \item{threshold}{[1,1] double, GFA model trimming threshold}
 }

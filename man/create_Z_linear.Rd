@@ -12,7 +12,7 @@ create_Z_linear(N, decorrelate = T)
 \arguments{
 \item{N}{Number of observations in data as integer}
 
-\item{decorrelate}{(optional) Should the variables be decorrelated?}
+\item{decorrelate}{(optional) Should the variables be de-correlated?}
 }
 \value{
 A [N,3] matrix of signals

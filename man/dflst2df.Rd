@@ -17,7 +17,7 @@ is added.
 }
 \description{
 Assumes equal variables for all datasets!
-Ouput has columns: <variables>, "dataset"
+Output has columns: <variables>, "dataset"
 Preserves list element names in column "dataset".
 For a more generic approach see dflst2dfmelt (uses reshape::melt(df_lst))
 }

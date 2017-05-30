@@ -2,7 +2,7 @@
 % Please edit documentation in R/cocoreg.R
 \name{cocoreg}
 \alias{cocoreg}
-\title{The Common Components by Regression (CoCoReg) algorith.}
+\title{The Common Components by Regression (CoCoReg) algorithm}
 \usage{
 cocoreg(data, cyclic = FALSE, mapping_function = mapping_lm,
   sample_paths = FALSE, center_data = T, scale_data = F)

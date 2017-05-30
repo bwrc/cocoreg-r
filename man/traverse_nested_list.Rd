@@ -13,7 +13,7 @@ traverse_nested_list(lst, fun, exclude_names = NULL, ...)
 
 \item{exclude_names}{string array, Names of list elements to skip at any level}
 
-\item{...}{Furhter parameters passed on to fun}
+\item{...}{Further parameters passed on to fun}
 }
 \value{
 A list outputs generated when applying fun to the bottom level of input lst.

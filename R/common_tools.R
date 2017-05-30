@@ -670,7 +670,7 @@ BGFA_joint_info <- function(model, threshold=0.001){
 #' 
 #' @param df_list [1,m] list of data.frames, Input data to GFA in COCOREG format
 #' @param K [1,1] int, (Maximum) number of GFA components 
-#' @param Nrep [1,1] int, Number of random initializatin used for learning the model
+#' @param Nrep [1,1] int, Number of random initialization used for learning the model
 #' @param threshold [1,1] double, GFA model trimming threshold
 #' 
 #' @return A list with elements:

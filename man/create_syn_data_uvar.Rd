@@ -2,7 +2,7 @@
 % Please edit documentation in R/synthetic_datasets.R
 \name{create_syn_data_uvar}
 \alias{create_syn_data_uvar}
-\title{A dollection with unrelated variables}
+\title{A collection with unrelated variables}
 \usage{
 create_syn_data_uvar()
 }
@@ -17,5 +17,5 @@ A list with elements
 \item{var.coef}{Noise multiplication factor used}
 }
 \description{
-A dollection with unrelated variables
+A collection with unrelated variables
 }

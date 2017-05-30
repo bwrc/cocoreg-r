@@ -9,7 +9,7 @@ PCA_cocoreg_interface(df_list, prc_th = 0.9)
 \arguments{
 \item{df_list}{[1,m] list of data.frames, Input data to GFA in COCOREG format}
 
-\item{prc_th}{[1,1] double, Threshold in precentage of cumulative variance explained
+\item{prc_th}{[1,1] double, Threshold in percentage of cumulative variance explained
 PCA components are included until cumulative explained variance reaches prc_th.}
 }
 \value{

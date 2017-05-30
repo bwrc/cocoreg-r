@@ -22,7 +22,7 @@ A list with elements:
 \item{E}{Noise}
 \item{var.coef}{Noise multiplication factor used}
 
-Each dataset is a data.frame to gain combatibility with lm() and glm()
+Each dataset is a data.frame to gain compatibility with lm() and glm()
 }
 \description{
 Create multivariate synthetic data

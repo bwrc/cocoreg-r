@@ -2,7 +2,7 @@
 % Please edit documentation in R/synthetic_datasets.R
 \name{create_syn_data_toy}
 \alias{create_syn_data_toy}
-\title{An illustrative synthetic datacollection}
+\title{An illustrative synthetic data collection}
 \usage{
 create_syn_data_toy(N = 100, normalize = T, noisemf = 0.1)
 }
