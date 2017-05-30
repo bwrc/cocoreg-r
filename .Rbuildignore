@@ -4,3 +4,4 @@
 ^README\.html$
 ^revdep
 ^README\.pdf$
+^maintainer_howto\.txt$

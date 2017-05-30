@@ -1,0 +1,84 @@
+This file contains a short walk-through of how what is needed to release a new version in CRAN.
+
+For a in-depth documentation see:
+http://r-pkgs.had.co.nz/
+and especially:
+http://r-pkgs.had.co.nz/release.html
+
+
+# Linux packages:
+To build pdf manual correctly:
+sudo apt install pandoc texinfo
+
+# R packages (not an exhaustive list):
+install.packages(c('devtools','hunspell','roxygen2'))
+library(devtools)
+
+
+## To update things, run (at the root folder of the package):
+devtools::document()
+devtools::build()
+
+
+## To check that everything is as it is supposed to
+
+devtools::document()
+# Note: For Roxygen2 the keywords need to be separated by a single
+# space from #' for them to work. In case there are multiple spaces or 
+# tabs Roxygen does to identify the keywords correctly and they do not
+# get added to NAMESPACE.
+
+devtools::spell_check()
+
+# To build the package
+devtools::build()
+devtools::build_win() #to check on a windows machine
+
+## To run CRAN checks
+devtools::check()
+devtools::check(manual = T)
+
+## Check reverse dependencies
+devtools::revdep_check()
+d <-readRDS('./revdep/checks.rds')
+
+
+## To upload to CRAN for release
+devtools::release()
+
+# Upon devtools::release() the system will ask you:
+# 1. Were Git checks successful?
+#    If the package is also a git repo make sure git status is clean.
+# 2. Is documentation free of spelling errors?
+#    Use devtools::spell_check() to check.
+# 3. Was R CMD check successful?
+#    Use devtools::check(manual = T) to test.
+# 4. Were devtool's checks successful? (todo: How to invoke this?)
+#   These are:
+#   Checking version number has three components... OK
+#   Checking dependencies don't rely on dev versions... OK
+#   Checking vignette titles are not placeholders... OK
+#   Checking NEWS.md is not ignored... OK
+#   Checking NEWS.Rd does not exist... OK
+#   Checking DESCRIPTION doesn't have Remotes field... OK
+# 5. Have you fixed all existing problems at 
+#    https://cran.rstudio.com/web/checks/check_results_cocoreg.html?
+#   Do not know how this gets created...
+# 6.Have you checked on win-builder (with devtools::build_win())?
+# 7. Have you updated your NEWS file?
+# 8. Is DESCRIPTION up-to-date?
+# 9. Are the CRAN submission comments correct?
+# 10. Is your email address xxxx?
+#
+# Make sure at least tasks 1-10 have been completed before trying to release.
+
+# It might be useful to add the following files to .Rbuildignore so that
+# they are not checked nor added to the package:
+# devtools::use_build_ignore("cran-comments.md")
+# devtools::use_build_ignore("README.Rmd")
+# devtools::use_build_ignore("README.html")
+# devtools::use_build_ignore("README.pdf")
+# devtools::use_build_ignore("revdep")
+
+## To install the packeage from a local copy (defaults to working dir)
+devtools::install()
